@@ -21,8 +21,8 @@
     --dark-blue: #4d90fe;
 
     /* Fonts */
-    --norse:;
-    --open-sans:;
+    --caesar:'Caesar Dressing', cursive;
+    --open-sans:'Open Sans', sans-serif;;
 
     /* Font Weight */
     --normal:400;
@@ -49,7 +49,7 @@
 body{
     font-size:var(--sm-size);
     margin:0;
-    font-family:;
+    font-family:var(--open-sans);
 }
 
 .container{
@@ -67,7 +67,7 @@ h1,
 h2,
 h3,
 h4{
-    font-family:;
+    /* font-family:var(--open-sans); */
     font-weight: var(--bold);
 }
 
@@ -116,4 +116,30 @@ button{
     padding:1em 0;
     color:white;
     cursor:pointer;
+}
+.header{
+    /* background-color:rgba(255, 255, 255, .5); */
+    background-color:black;
+    max-height:100%;
+}
+.logo-text{
+    font-size:2rem;
+    text-transform: uppercase;
+    color:var(--dark-orange);
+    /* letter-spacing:1.5px; */
+    font-weight:var(--bolder);
+    font-family: var(--caesar);
+}
+
+.logo{
+    display: flex;
+    align-items:center;
+    outline:1px solid white;
+}
+
+.nav__image{
+    width:50%;
+}
+
+@media (min-width:767px){
 }
