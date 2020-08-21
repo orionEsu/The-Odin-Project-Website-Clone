@@ -336,7 +336,7 @@ button {
 .courses{
     margin-top:4em;
     background-color:var(--light-white);
-    padding:5em 0;
+    padding:5em 0 3em 0;
     text-align:center;
 }
 
@@ -351,13 +351,98 @@ button {
 
 .course h4{
     text-transform:uppercase;
-    margin-top:1em;
+    margin-top:.4em;
 }
 
 .course{
     margin:2em auto 0 auto;
     background:var(--white);
-    width:100%;
+    width:90%;
     max-width:400px;
-    padding:1.5em 0;
+    padding:1em 0;
+}
+
+.courses__btn{
+    margin-top:3em;
+    background-color:var(--dark-orange);
+    width:60%;
+}
+
+.stories{
+    margin-top:2em;
+    padding-bottom:4em;
+    background:linear-gradient(to bottom, var(--white), var(--light-white));
+}
+
+.stories h2{
+    text-align:center;
+    margin-bottom:2em;
+}
+
+.user > img,
+.hidden{
+    display:none;
+}
+
+.user__name a {
+    color:var(--light-orange);
+    font-weight:var(--normal);
+}
+
+.user__name{
+    margin-bottom:1.5em;
+}
+
+.user > p{
+    font-size:var(--sm-size);
+}
+
+.user + .user{
+    margin-top:2em;
+}
+
+.read__more{
+    margin-top:1.5em;
+    text-align:center;
+}
+
+.read__more a{
+    color:var(--very-light-grey);
+    text-decoration:underline;
+    font-weight:var(--normal);
+}
+
+.sign__up{
+    margin-top:4em;
+    text-align:center;
+}
+
+.sign__up > p{
+    font-size:1.7rem;
+    font-weight:var(--light);
+}
+
+.sign__up-btn{
+    background-color:var(--light-blue);
+    margin-top:2em;
+    width:45%;
+}
+
+footer{
+    padding:2em 0;
+}
+.footer__logo,
+.footer__links{
+    display:none;
+}
+
+.footer__social__items{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    flex-wrap:wrap;
+}
+
+.footer__social__links > img{
+    width:30px;
 }
