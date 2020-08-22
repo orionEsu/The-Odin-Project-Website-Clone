@@ -30,7 +30,7 @@ footer {
 .attribution a{
     color:var(--dark-orange);
     font-family:var(--caesar);
-    font-size:var(--lg-size);
+    font-size:var(--md-size);
 }
 
 .footer__social__links>img {
@@ -55,6 +55,12 @@ footer {
 
     .footer__link + .footer__link{
         margin-top:1em;
+    }
+    .attribution a{
+        font-size:var(--lg-size);
+    }
+    .attribution span{
+        margin-left:.1em;
     }
 }
 

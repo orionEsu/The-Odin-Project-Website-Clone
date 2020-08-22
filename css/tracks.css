@@ -59,22 +59,25 @@ img {
     max-width: 100%;
 }
 
-h1,
-h2 {
-    font-weight: var(--bold);
-}
-
 h1 {
     font-size: var(--xl-size);
     letter-spacing: .5px;
+    font-weight:var(--light);
 }
 
 h2 {
     font-size: var(--lg-size);
     letter-spacing: .5px;
     color: var(--light-grey);
+    font-weight: var(--bold);
 }
 
+
+h4{
+    font-size: var(--md-size);
+    color:var(--very-light-grey);
+    text-transform:uppercase;
+}
 p {
     font-size: var(--md-size);
     color: var(--very-light-grey);
@@ -98,7 +101,104 @@ button {
     font-weight: var(--bold);
     font-size: var(--sm-size);
     padding: 1em 0;
-    color: white;
+    color: var(--white);
     cursor: pointer;
     font-family: var(--open-sans);
+    background-color:var(--dark-orange);
+    width:50%;
+    max-width:250px;
+}
+
+.tracks__section{
+    margin:7em auto 0 auto;
+    /* padding-bottom:9em; */
+}
+
+.sub__container{
+    width:90%;
+    max-width:850px;
+    margin:auto;
+    
+}
+
+.intro{
+    text-align:center;
+}
+
+.intro__header{
+    color:var(--light-orange);
+}
+
+.intro__sub__header{
+    margin-top:1.2em;
+    color:var(--light-grey);
+    font-weight:var(--normal);
+    letter-spacing:.5px;
+}
+
+.intro__text,
+.intro__sub__text{
+    margin-top:1em;
+}
+
+.tracks{
+    margin-top:3em;
+}
+
+.card{
+    background-color:var(--white);
+    padding:2em;
+}
+
+.card + .card{
+    margin-top:2em;
+}
+
+.card__btn{
+    display:flex;
+    justify-content:right;
+    margin-top:1em;
+}
+
+.card__header__btn{
+    display:none;
+}
+
+.line{
+    width:100%;
+    max-width:800px;
+    height:1px;
+    background-color:var(--very-light-grey);
+    display:block;
+    margin:.7em 0 1em 0;
+}
+
+@media (min-width:500px){
+    .sub__container{
+        width:85%;
+        max-width:800px;
+        margin:auto;
+    }
+}
+
+@media (min-width:750px){
+    .card__header{
+        display:flex;
+        align-items:center;
+        justify-content:space-between;
+    }
+    .card__header__btn{
+        display:block;
+    }
+
+    .card__btn{
+        display:none;
+    }
+
+    button {
+        border-radius: .2em;
+        padding: 1em 0;
+        width:50%;
+        max-width:180px;
+    }
 }

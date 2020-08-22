@@ -141,13 +141,16 @@ button {
     font-family: var(--open-sans);
 }
 
-
-
 .intro {
-    margin-top: 6em;
+    margin-top: 6.5em;
     background-image: linear-gradient(to bottom, var(--white), var(--very-light-white));
 }
 
+@media (min-width:851px){
+    .intro{
+        margin-top:3em;
+    }
+}
 .intro__text {
     text-align: center;
 }
@@ -168,7 +171,7 @@ button {
     background-color: var(--light-blue);
     font-weight: var(--bold);
     width: 80%;
-    max-width: 400px;
+    max-width: 300px;
     letter-spacing: .3px;
 }
 

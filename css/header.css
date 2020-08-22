@@ -1,3 +1,5 @@
+/* Navigation menu styles */
+
 .header {
     background-color: var(--white);
     max-height: 100%;
@@ -8,12 +10,41 @@
     padding: .5em 0;
 }
 
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    /* outline:1px solid red; */
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+}
+
+/* Navigation menu for desktop screens */
+
+.nav__list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 60%;
+}
+
+.nav__image {
+    width: 40%;
+}
+
 .logo-text {
-    font-size: var(--md-size);
+    font-size: 1.5rem;
     text-transform: uppercase;
     color: var(--dark-orange);
     font-weight: var(--bolder);
     font-family: var(--caesar);
+}
+
+@media (min-width:950px) {
+    .logo-text {
+        font-size: 1.8rem;
+    }
 }
 
 .logo {
@@ -21,36 +52,45 @@
     align-items: center;
 }
 
-.logo>img,
+.logo>img {
+    height: 80px;
+    width: auto;
+    margin-right: 10px;
+}
+
 .nav-logo>img {
     height: 60px;
     width: auto
 }
 
+.nav-logo-img {
+    display: none;
+}
+
+.nav__items svg {
+    width: 10px;
+    margin: 0 0 0 0;
+    color: var(--very-light-grey);
+}
+
+.nav__link,
+.dropdown a {
+    color: var(--very-light-grey);
+    font-size: var(--sm-size);
+    font-weight: var(--bold);
+
+}
+
 .hamburger {
-    cursor: pointer;
-    padding: 20px 0;
+    display: none;
 }
 
-
-.hamburger>div {
-    height: 2px;
-    width: 25px;
-    background: var(--dark-blue);
-    border-radius: 5px;
+.seperator {
+    display: none;
 }
 
-.line2,
-.line3 {
-    margin-top: 7px;
-}
-
-.hamburger:focus,
-.hamburger:hover {
-    outline: 1px dotted var(--dark-grey);
-}
-
-@media (max-width:767px) {
+/* navigation menu for mobile screens */
+@media (max-width:850px) {
     body {
         overflow-x: hidden;
     }
@@ -60,13 +100,17 @@
         position: fixed;
         top: 0;
         width: 100%;
-        z-index:100;
+        z-index: 100;
     }
 
     nav {
         display: flex;
         justify-content: space-between;
         align-items: center;
+    }
+
+    .nav__image {
+        width: 100%;
     }
 
     .nav__list {
@@ -87,6 +131,7 @@
 
     .nav-logo-img {
         margin-bottom: 0;
+        display: block;
     }
 
     .burger {
@@ -131,6 +176,30 @@
         color: var(--dark-orange);
     }
 
+    .hamburger {
+        display: block;
+        cursor: pointer;
+        padding: 20px 0;
+    }
+
+
+    .hamburger>div {
+        height: 2px;
+        width: 25px;
+        background: var(--dark-blue);
+        border-radius: 5px;
+    }
+
+    .line2,
+    .line3 {
+        margin-top: 7px;
+    }
+
+    .hamburger:focus,
+    .hamburger:hover {
+        outline: 1px dotted var(--dark-grey);
+    }
+
     .drop {
         margin-top: -10px;
     }
@@ -140,6 +209,7 @@
     }
 
     .seperator {
+        display: block;
         height: 2px;
         width: 90%;
         background: var(--dark-orange);
@@ -159,6 +229,56 @@
     .nav-active {
         opacity: 1;
         background-color: var(--white);
+        transform: translateY(0);
+    }
+
+}
+
+/* Drop down menu for desktop screens */
+@media (min-width:851px) {
+    .dropdown {
+        margin-left: -50px;
+        position: absolute;
+        background-color: var(--white);
+        margin-top: 10px;
+        width: 160px;
+        height: 80px;
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        justify-content: space-around;
+        border-radius: 5px;
+        box-shadow: 0 5px 16px 0 rgba(0, 0, 0, 0.1);
+        opacity: 0;
+        pointer-events: none;
+        transform: translateY(-10px);
+        transition: all .2s ease;
+    }
+
+    .dropdown li {
+        /* background-color:yellow; */
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        justify-content: space-around;
+        /* border-radius:5px; */
+        padding-left: 20px;
+    }
+
+    .dropdown a {
+        color: var(--light-orange);
+        font-weight: var(--normal);
+    }
+
+    .dropdown a:hover {
+        color: var(--black);
+    }
+
+    .community:focus+.dropdown {
+        opacity: 1;
+        pointer-events: all;
         transform: translateY(0);
     }
 
