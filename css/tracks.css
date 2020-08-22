@@ -13,8 +13,6 @@
     --dark-grey: #212529;
     --light-grey: #4a4a4a;
     --very-light-grey: #4a4a4ab3;
-    --black: #000;
-    --light-black: #00000080;
     --white: #fff;
     --light-white: #f3f3f3;
     --very-light-white: #eee;
@@ -33,7 +31,7 @@
 
     /* Line height */
     --line-height: 1.7;
-    
+
     /* Font Sizes */
     --sm-size: 1rem;
     --md-size: 1.25rem;
@@ -48,7 +46,6 @@
 
 body {
     font-size: var(--sm-size);
-    margin: 0;
     font-family: var(--open-sans);
 }
 
