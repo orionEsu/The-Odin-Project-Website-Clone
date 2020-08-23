@@ -13,6 +13,8 @@
     --dark-grey: #212529;
     --light-grey: #4a4a4a;
     --very-light-grey: #4a4a4ab3;
+    --black: #000;
+    --light-black: #00000080;
     --white: #fff;
     --light-white: #f3f3f3;
     --very-light-white: #eee;
@@ -148,6 +150,7 @@ button {
 .card{
     background-color:var(--white);
     padding:2em;
+    box-shadow: 0 5px 16px 0 rgba(0, 0, 0, 0.1);
 }
 
 .card + .card{
@@ -182,6 +185,9 @@ button {
 }
 
 @media (min-width:750px){
+    .card{
+        padding:3.5em;
+    }
     .card__header{
         display:flex;
         align-items:center;
@@ -194,7 +200,9 @@ button {
     .card__btn{
         display:none;
     }
-
+    .line{
+        margin:1em 0 1em 0;
+    }
     button {
         border-radius: .2em;
         padding: 1em 0;
