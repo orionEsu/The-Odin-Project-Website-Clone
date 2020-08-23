@@ -113,7 +113,22 @@ button {
 
 .tracks__section{
     margin:7em auto 0 auto;
-    /* padding-bottom:9em; */
+    padding-bottom:7em;
+    position:relative;
+}
+
+.tracks__section::after{
+    content:'';
+    background:url(../images/home-isometric.svg) bottom no-repeat;
+    position:absolute;
+    bottom:0; 
+    top:0;
+    right:0;
+    left:0;
+    z-index:-1;
+    opacity:.3;
+    /* background-repeat: no-repeat;
+    background-position:bottom; */
 }
 
 .sub__container{
@@ -209,4 +224,13 @@ button {
         width:50%;
         max-width:180px;
     }
+}
+
+@media (min-width:85px){
+    
+.tracks__section{
+    margin:3.5em auto 0 auto;
+    /* padding-bottom:9em; */
+}
+
 }
