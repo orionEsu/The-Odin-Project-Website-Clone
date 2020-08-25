@@ -57,8 +57,6 @@ body {
     font-size: var(--sm-size);
     margin: 0;
     font-family: var(--open-sans);
-    /* max-width:750px; */
-    /* text-align:center; */
 }
 
 .container {
@@ -67,11 +65,12 @@ body {
     margin: 0 auto;
 }
 
-.header-container{
+.header-container {
     width: 90%;
     max-width: 1250px;
     margin: 0 auto;
 }
+
 img {
     max-width: 100%;
 }
@@ -80,14 +79,13 @@ h1,
 h2,
 h3,
 h4 {
-    /* font-family:var(--open-sans); */
     letter-spacing: .5px;
 }
 
 h1 {
     font-size: var(--xl-size);
-    font-weight:var(--light);
-    color:var(--light-orange);
+    font-weight: var(--light);
+    color: var(--light-orange);
 }
 
 h2 {
@@ -105,7 +103,7 @@ p {
 h3 {
     letter-spacing: .5px;
     font-weight: var(--bold);
-    color:var(--light-grey);
+    color: var(--light-grey);
 }
 
 p {
@@ -122,7 +120,6 @@ a {
     text-decoration: none;
     font-size: var(--sm-size);
     font-weight: var(--bold);
-    /* color:var(--light-grey); */
 }
 
 button {
@@ -134,190 +131,308 @@ button {
     color: white;
     cursor: pointer;
     font-family: var(--open-sans);
-    width:50%;
-    max-width: 350px;
+    width: 50%;
+    max-width: 200px;
 }
 
 .card__description a,
-.contact__us-link{
-    color:var(--light-orange);
-    text-decoration:underline;
-    font-weight:var(--normal);
-    font-size:var(--md-size);
+.contact__us-link {
+    color: var(--light-orange);
+    text-decoration: underline;
+    font-weight: var(--normal);
+    font-size: var(--md-size);
 }
 
-.main{
-    margin-top:7em;
-    text-align:center;
+.main {
+    margin-top: 7em;
+    text-align: center;
 }
+
 .intro__section,
-.beliefs{
+.beliefs {
     width: 85%;
     max-width: 600px;
     margin: 0 auto;
 }
-.intro__section p{
-    margin-top:2em;
+
+.intro__section p {
+    margin-top: 2em;
 }
 
-.beliefs{
-    margin-top:4em;
+.beliefs {
+    margin-top: 4em;
 }
 
-.beliefs__content{
-    margin-top:4em;
+.beliefs__content {
+    margin-top: 3em;
 }
 
-.beliefs__content + .beliefs__content{
-    margin-top:3em;
+.beliefs__content+.beliefs__content {
+    margin-top: 3em;
 }
 
-.beliefs__content-text{
-    margin-top:1.5em;
+.beliefs__content-text {
+    margin-top: 1.5em;
 }
 
-.beliefs__content-text h3{
+.beliefs__content-text h3 {
     margin-bottom: 1em;
 }
 
-.overview{
-    background-color:var(--light-white);
-    margin-top:5em;
-    padding-top:3.5em;
+.overview {
+    background-color: var(--light-white);
+    margin-top: 5em;
+    padding-top: 3.5em;
 }
 
 
-.overview h2{
-    color:var(--dark-orange);
+.overview h2 {
+    color: var(--dark-orange);
 }
-.card__section{
-    margin-top:3.5em;
-    /* padding-top:2em; */
+
+.card__section {
+    margin-top: 3.5em;
 }
 
 .card,
 .origin,
-.open-source{
-    width:100%;
-    background-color:var(--white);
-    padding:2em;
-    max-width:550px;
-    margin:auto;
+.open-source {
+    width: 100%;
+    background-color: var(--white);
+    padding: 2em;
+    max-width: 550px;
+    margin: auto;
 }
 
-.number{
+.number {
     font-size: var(--xl-size);
-    color:rgba(74,74,74,.3);
-    font-weight:var(--bold);
-    letter-spacing:.5px;
-}
-.card + .card{
-    margin-top:2em;
-}
-.card__description{
-    margin-top:2.5em;
-    padding-bottom:5em;
-    text-align:left;
+    color: rgba(74, 74, 74, .3);
+    font-weight: var(--bold);
+    letter-spacing: .5px;
 }
 
-.card__description h3{
-    font-size:var(--xl-size);
+.card+.card {
+    margin-top: 2em;
 }
 
-
-.card__description p{
-    margin-top:1.5em;
-}
-.open-source-header{
-    display:flex;
+.card__description {
+    margin-top: 2.5em;
+    padding-bottom: 5em;
+    text-align: left;
 }
 
-.open-source-header img{
-    width:45px;
-    margin-right:.8em;
-    /* background-color:black; */
-}
-
-.open-source-header h3{
-    color:var(--very-light-grey);
+.card__description h3 {
+    font-size: var(--xl-size);
 }
 
 
-.contact-us{
-    text-align:center;
+.card__description p {
+    margin-top: 1.5em;
 }
 
-.contact__us-text{
-    margin-top:3em;
+.open-source-header {
+    display: flex;
 }
 
-.contact__us-text p{
-    margin-top:1.5em;
+.open-source-header img {
+    width: 45px;
+    margin-right: .8em;
 }
 
-.contact__us-link{
-    color:var(--very-light-grey);
+.open-source-header h3 {
+    color: var(--very-light-grey);
 }
 
-.contact__us-btn{
-    background-color:var(--dark-orange);
-    margin-top:2.5em;
+
+.contact-us {
+    text-align: center;
+    margin-top: 5em;
 }
-.contribute{
-    /* outline:1px solid red; */
-    /* margin-top:4.5em; */
-    padding:5em 0;
+
+.contact__us-text {
+    margin-top: 3em;
+}
+
+.contact__us-text p {
+    margin-top: 1.5em;
+}
+
+.contact__us-link {
+    color: var(--very-light-grey);
+}
+
+.connect img {
+    width: 500px;
+}
+
+.contact__us-btn {
+    background-color: var(--dark-orange);
+    margin-top: 2.5em;
+}
+
+.contribute {
+    padding: 5em 0;
     background-image: linear-gradient(to bottom, var(--white), var(--light-white));
 }
 
-.contribute p{
-    font-size:1.75rem;
-    font-weight:var(--light);
-}
-.contribute-btn{
-    background-color:var(--light-blue);
-    margin-top:2em;
+.contribute p {
+    font-size: 1.75rem;
+    font-weight: var(--light);
 }
 
-@media (min-width:500px){
-    .contribute p{
-        font-size:2.2rem;
+.contribute-btn {
+    background-color: var(--light-blue);
+    margin-top: 2em;
+}
+
+@media (min-width:500px) {
+    .contribute p {
+        font-size: 2.2rem;
     }
 }
 
-@media (min-width:580px){
-    .beliefs__content{
-        display:flex;
-        text-align:left;
-        align-items:center;
-        gap:20px;
+@media (min-width:580px) {
+    .beliefs__content {
+        display: flex;
+        text-align: left;
+        align-items: center;
+        gap: 20px;
     }
-    .beliefs__content img{
-        width:80px;
-        height:77px;
+
+    .beliefs__content img {
+        width: 80px;
+        height: 77px;
     }
 }
 
-@media (min-width:768px){
-    .card__section{
-        display:flex;
-        max-width:750px;
-        gap:1.2em;
-        margin:3.5em auto 0 auto;
+@media (min-width:768px) {
+
+    .intro__section,
+    .beliefs {
+
+        max-width: 800px;
     }
 
-    .card + .card{
-        margin-top:0;
+    .beliefs {
+        width: 85%;
+        max-width: 800px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .card__section {
+        display: flex;
+        /* max-width: 750px; */
+        gap: 1.2em;
+        margin: 3.5em auto 0 auto;
+    }
+
+    .cards {
+        display: flex;
+        width: 65%;
+        gap: 1.2em;
+        max-width: 750px;
+    }
+
+    .cards-1 {
+        width: 35%;
+        max-width: 750px;
+    }
+
+    .card+.card {
+        margin-top: 0;
     }
 
     .origin,
-    .open-source{
-        max-width:750px;
-        margin:auto;
+    .open-source {
+        max-width: 750px;
+        margin: 0 auto;
+    }
+
+    .connect {
+        max-width: 900px;
+        display: flex;
+        align-items: center;
+    }
+
+    .connect img {
+        width: 100%;
+    }
+
+    .contact__us-text {
+        margin-top: 0;
+        width: 100%;
+    }
+
+    .contribute p {
+        max-width: 900px;
+        margin: auto;
     }
 }
 
 
-.open-source{
-    margin-top:2em;
+.open-source {
+    margin-top: 2em;
+}
+
+@media (min-width:968px) {
+    .card {
+        text-align: left;
+    }
+
+    .card__section,
+    .card__description {
+        max-width: 1000px;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .card__description {
+        display: flex;
+        gap: 1.2em;
+    }
+
+
+    .card__description h3 {
+        font-size: 1.8rem;
+    }
+
+    .origin {
+        width: 65%;
+        max-width: 1000px;
+    }
+
+    .open-source {
+        width: 35%;
+        max-width: 1000px;
+    }
+
+    .open-source {
+        margin-top: 0;
+    }
+}
+
+@media (min-width:1196px) {
+
+    .cards-1,
+    .cards,
+    .card__section,
+    .card__description {
+        max-width: 1100px;
+        margin-right:auto;
+        margin-left:auto;
+    }
+
+    .card__description h3 {
+        font-size: var(--xl-size);
+    }
+
+    .connect img {
+        width: 100%;
+    }
+
+    .contact__us-link,
+    .contact__us-text p {
+        font-size: 1.1rem;
+    }
 }
