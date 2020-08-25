@@ -18,26 +18,41 @@ footer {
     flex-wrap: wrap;
     width:100%;
 }
-
-.attribution{
+.credits{
     text-align:center;
     margin-top:2em;
+}
+.attribution{
+    text-align:center;
     font-size:var(--md-size);
+    margin-bottom:.2em;
 }
-.attribution span{
-    margin-left:.2em;
-}
-.attribution a{
+.credits a{
     color:var(--dark-orange);
     font-family:var(--caesar);
-    font-size:var(--md-size);
+    font-size:1.3rem;
 }
 
 .footer__social__links>img {
     width: 25px;
 }
-
 @media (min-width:480px){
+
+    .credits{
+        display:flex;
+        align-items:center;
+        justify-content:center;
+    }
+    
+    .credits a{
+        font-size:var(--lg-size);
+        margin-left:.4em;
+    }
+ 
+    .attribution {
+        margin-bottom:0;
+    }
+   
     .footer__links{
         display:block;
     }
@@ -56,12 +71,7 @@ footer {
     .footer__link + .footer__link{
         margin-top:1em;
     }
-    .attribution a{
-        font-size:var(--lg-size);
-    }
-    .attribution span{
-        margin-left:.1em;
-    }
+  
 }
 
 @media (min-width:700px){

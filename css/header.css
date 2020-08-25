@@ -218,7 +218,11 @@
 
 /* Drop down menu for desktop screens */
 @media (min-width:851px) {
-
+    .nav__list a:hover,
+    .nav__list a:focus,
+    .nav__list a:active{
+        color:var(--dark-grey);
+    }
     .nav__link,
     .dropdown a {
         color: var(--very-light-grey);
