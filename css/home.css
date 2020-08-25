@@ -236,6 +236,7 @@ button {
     width: 90%;
     max-width:350px;
     padding: 1.5em 0;
+    box-shadow: 0 5px 16px 0 rgba(0, 0, 0, 0.1);
 }
 
 .courses__btn {
@@ -255,7 +256,6 @@ button {
     text-align: center;
     margin-bottom: 4em;
 }
-
 .user>img,
 .hidden {
     display: none;
