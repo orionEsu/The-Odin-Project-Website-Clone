@@ -124,47 +124,54 @@
     <main role="main">
 
         <section class="intro">
-
-            <h1>Login</h1>
-
+            <div class="container">
+                <h1>Login</h1>
+            </div>
         </section>
 
         <section class="form">
 
-            <form action="">
-                <div class="form-input">
-                    <span class="form-icon"></span>
-                    <input type="email" name="email" id="" placeholder="Email Address">
-                </div>
+                <form action="">
 
-                <div class="form-input">
-                    <span class="form-icon"></span>
-                    <input type="password" name="password" id="" placeholder="Password">
-                </div>
+                    <div class="form-inputs">
+                        <span class="icons"></span>
+                        <input type="email" name="email" id="" placeholder="Email Address">
+                    </div>
+                    <div class="form-inputs">
+                        <span class="icons"></span>
+                        <input type="password" name="password" id="" placeholder="Password">
+                    </div>
+                   
+                    <div class="remember">
+                        <p class="remember-me">Remeber Me</p>
+                        <a href="">Forgot your password?</a>
+                    </div>
+                    <div class="links">
 
-                <a href="" class="remeber">Remember me</a>
-                <br>
-                <a href="" class="forgot">Forgot your password?</a>
-                <br>
-                <button class="login">Login</button>
+                        <button class="sign_up">Sign Up</button>
 
-                <p class="log-in">Or log in with</p>
+                        <p class="sign">or sign up with</p>
 
-                <button class="github"><span class="btn-icon"></span> Github</button>
-
-                <br>
-
-                <button class="google"><span class="btn-icon"></span>Google</button>
-            </form>
-
-            <div class="signin">
-
-                <p>Haven't signed up yet</p>
-
-                <a href="./sign_up.html" class="sign-up">Create a new account</a>
-            </div>
+                        <button class="github">
+                            <span class="button-icons">Github</span>
+                        </button>
+                        <br>
+                        <button class="google">
+                            <span class="button-icons">Google</span>
+                        </button>
+                    </div>
+                </form>
 
         </section>
+
+        <section class="login-section">
+
+            <p>Haven't signed up yet?</p>
+            <!-- <br> -->
+            <p class="bottom-cta"></p>
+                <a href="./sign_up.html" class="login">Create new account</a>
+        </section>
+
     </main>
 
     <footer>
@@ -238,6 +245,7 @@
         </div>
 
     </footer>
+    
     <script src="./js/script.js" async defer></script>
 </body>
 
