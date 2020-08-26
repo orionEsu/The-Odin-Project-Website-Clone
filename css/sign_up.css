@@ -99,20 +99,29 @@ button {
     cursor: pointer;
     font-family: var(--open-sans);
     width:90%;
+    max-width:430px;
+}
+
+button:hover{
+    /* background-color:rgba(0,0,0,0.7); */
+    opacity:.7;
 }
 
 .intro{
     margin-top:6em;
     text-align:center;
 }
+main{
+    background:linear-gradient(to bottom, var(--white), var(--very-light-white));
 
+}
 .form{
     background-color:var(--white);
     box-shadow:0 5px 16px 0 rgba(0, 0, 0, 0.1);
-    width:90%;
-    max-width:650px;
+    width:85%;
+    max-width:550px;
     margin:2em auto 0 auto;
-    padding:3em 0;
+    padding:3em 1em;
     /* outline:1px solid red; */
 }
 .form-inputs{
@@ -124,6 +133,7 @@ input[type=email],
 input[type=password]{
     background-color:rgba(0,0,0,0.03);
     width:90%;
+    max-width:430px;
     padding:1em 0 1em 3em;
     border:none;
     margin:auto;
@@ -145,21 +155,105 @@ input[type=password]{
 .links{
     /* width:90%; */
     /* outline:1px solid red; */
-    margin:2em auto 0 auto;
+    margin:1em auto 0 auto;
     text-align:center;
 }
 
 .form-link{
-    font-size:var(--sm-size);
+    font-size:.8rem;
     color:var(--light-grey);
     text-decoration:underline;
+    font-weight:var(--light);
+    letter-spacing:.3px;
+    /* margin-bottom:1em; */
+}
+
+.sign_up{
+    margin-top:1.5em;
+    background-color:var(--light-blue);
+}
+
+.sign{
+    font-size:.8rem;
+    text-transform:uppercase;
+    letter-spacing:.5px;
+    margin:1em 0 1em 0;
+    color:var(--very-light-grey);
+    opacity:.5;
+}
+
+.sign::before,
+.sign::after{
+    content:'';
+    height:1px;
+    width:20%;
+    background-color:var(--very-light-grey);
+    opacity: .5;
+    display:inline-block;
+    vertical-align: middle;
+}
+
+.sign::before{
+    margin-right:15px;
+}
+
+.sign::after{
+    margin-left:15px;
+}
+
+
+.github{
+    background-color:var(--light-grey);
+    margin-bottom:1em;
+}
+
+.google{
+    background-color:var(--dark-blue);
+}
+.login-section{
+    margin-top:1em;
+    text-align:center;
+    padding:7em 0;
+}
+
+.login-section p{
+    font-size:var(--xl-size);
+    font-weight:var(--light);
+}
+
+.bottom-cta{
+    margin-top:2em;
+    
 }
 
 .login{
-    margin-top:3.5em;
-    text-align:center;
+    color:rgba(74,74,74,.3);
+    border: 3px solid rgba(74,74,74,.3);
+    border-radius:0.2em;
+    padding:1em 2.5em;
 }
 
-.login p{
-    font-size:var(--lg-size);
+.login:hover{
+    color:var(--dark-grey);
+    border-color: var(--dark-grey);
+}
+
+@media (max-width:320px){
+    .sign::before,
+    .sign::after{
+    content:'';
+    height:1px;
+    width:15%;
+    background-color:var(--very-light-grey);
+    opacity: .5;
+    display:inline-block;
+    vertical-align: middle;
+}
+}
+
+@media (max-width:280px){
+    .sign::before,
+    .sign::after{
+        display:none;
+    }
 }
