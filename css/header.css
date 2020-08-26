@@ -132,13 +132,13 @@
 
     .line-1,
     .line-2 {
-        background-color: var(--light-blue);
+        background-color:#9bd3d6;
         width: 25px;
-        height: 3px;
+        height: 5px;
     }
 
     .line-1 {
-        transform: rotate(45deg) translateX(2px) translateY(2px);
+        transform: rotate(45deg) translateX(3.5px) translateY(3.5px);
     }
 
     .line-2 {
@@ -169,13 +169,13 @@
     .hamburger>div {
         height: 2px;
         width: 25px;
-        background: var(--dark-blue);
+        background: var(--light-blue);
         border-radius: 5px;
     }
 
     .line2,
     .line3 {
-        margin-top: 7px;
+        margin-top: 6px;
     }
 
     .hamburger:focus,
