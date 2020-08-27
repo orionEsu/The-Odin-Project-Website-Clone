@@ -156,7 +156,11 @@ button:hover{
 .cards + .cards{
     margin-top:2em;
 }
-
+.card__header{
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+}
 .card__header{
     margin-bottom:1.5em;
 }
@@ -168,6 +172,11 @@ button:hover{
 
 .bold{
     font-weight:var(--bold);
+}
+
+.card__header img{
+    width:30px;
+    height:auto;
 }
 
 .card__link{

@@ -133,7 +133,7 @@ button {
     font-family: var(--open-sans);
     width: 50%;
     max-width: 200px;
-    box-shadow:0 0.05em 0.25em 0 rgba(0,0,0,0.5);
+    box-shadow: 0 0.05em 0.25em 0 rgba(0, 0, 0, 0.5);
 }
 
 .card__description a,
@@ -257,6 +257,9 @@ button {
 
 .contact__us-text p {
     margin-top: 1.5em;
+    max-width: 40ch;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 .contact__us-link {
@@ -324,7 +327,6 @@ button {
 
     .card__section {
         display: flex;
-        /* max-width: 750px; */
         gap: 1.2em;
         margin: 3.5em auto 0 auto;
     }
@@ -421,8 +423,8 @@ button {
     .card__section,
     .card__description {
         max-width: 1100px;
-        margin-right:auto;
-        margin-left:auto;
+        margin-right: auto;
+        margin-left: auto;
     }
 
     .card__description h3 {
@@ -435,6 +437,6 @@ button {
 
     .contact__us-link,
     .contact__us-text p {
-        font-size: 1.1rem;
+        font-size: 1.3rem;
     }
 }

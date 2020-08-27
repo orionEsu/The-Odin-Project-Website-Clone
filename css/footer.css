@@ -113,5 +113,6 @@ footer {
         color:var(--light-orange);
         font-size:var(--lg-size);
         letter-spacing:0;
+        margin-left:10px;
     }
 }
