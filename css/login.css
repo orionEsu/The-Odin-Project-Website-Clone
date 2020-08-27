@@ -119,8 +119,10 @@ button:hover{
     }
 }
 main{
-    background:linear-gradient(to bottom, var(--white), var(--very-light-white));
-
+    background-image: -webkit-linear-gradient(to bottom, var(--white), var(--light-white));
+    background-image: -moz-linear-gradient(to bottom, var(--white), var(--light-white));
+    background-image: -o-linear-gradient(to bottom, var(--white), var(--light-white));
+    background-image: linear-gradient(to bottom, var(--white), var(--light-white));
 }
 .form{
     background-color:var(--white);

@@ -100,12 +100,10 @@ button {
     font-family: var(--open-sans);
     width:90%;
     max-width:430px;
-    /* box-shadow:0 5px 16px 0 rgba(0, 0, 0, 0.2); */
     box-shadow:0 0.05em 0.25em 0 rgba(0,0,0,0.5);
 }
 
 button:hover{
-    /* background-color:rgba(0,0,0,0.7); */
     opacity:.7;
 }
 
@@ -114,8 +112,10 @@ button:hover{
     text-align:center;
 }
 main{
-    background:linear-gradient(to bottom, var(--white), var(--very-light-white));
-
+    background-image: -webkit-linear-gradient(to bottom, var(--white), var(--light-white));
+    background-image: -moz-linear-gradient(to bottom, var(--white), var(--light-white));
+    background-image: -o-linear-gradient(to bottom, var(--white), var(--light-white));
+    background-image: linear-gradient(to bottom, var(--white), var(--light-white));
 }
 .form{
     background-color:var(--white);
@@ -124,7 +124,6 @@ main{
     max-width:500px;
     margin:2em auto 0 auto;
     padding:3em 1em;
-    /* outline:1px solid red; */
 }
 .form-inputs{
     text-align:center;
@@ -143,7 +142,6 @@ input[type=password]{
     font-size:var(--sm-size);
     font-family: var(--open-sans);
     color:var(--light-grey);
-    /* z-index:1; */
 }
 .form-inputs + .form-inputs{
     margin-top:1.3em;
@@ -152,7 +150,6 @@ input[type=password]{
 ::placeholder{
     font-size:var(sm-size);
     color:rgba(0, 0, 0, 0.3);
-    /* padding: 0 0 0 1.2em; */
 }
 
 .user-icon::before{
@@ -185,8 +182,6 @@ input[type=password]{
 }
 
 .links{
-    /* width:90%; */
-    /* outline:1px solid red; */
     margin:1em auto 0 auto;
     text-align:center;
 }
@@ -197,7 +192,6 @@ input[type=password]{
     text-decoration:underline;
     font-weight:var(--light);
     letter-spacing:.3px;
-    /* margin-bottom:1em; */
 }
 
 .sign_up{

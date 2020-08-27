@@ -132,20 +132,16 @@ button:hover{
 
 
 .questions{
-    /* outline:1px solid red;
-    width:85%;
-    max-width:1000px; */
     margin:4em auto 0 auto;
-    background-image:linear-gradient(to bottom, var(--white), var(--very-light-white));
-    /* padding-bottom:4em; */
+    background-image: -webkit-linear-gradient(to bottom, var(--white), var(--light-white));
+    background-image: -moz-linear-gradient(to bottom, var(--white), var(--light-white));
+    background-image: -o-linear-gradient(to bottom, var(--white), var(--light-white));
+    background-image: linear-gradient(to bottom, var(--white), var(--light-white));
 }
 
 .cards{
-    /* outline:1px solid green; */
     margin:auto;
-    /* padding:0; */
     width:100%;
-    /* max-width:900px; */
     background-color:var(--white);
     box-shadow:0 2px 4px 0 rgba(0, 0, 0, 0.1);
 

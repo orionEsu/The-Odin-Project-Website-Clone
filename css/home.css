@@ -146,7 +146,10 @@ button {
 
 .intro {
     margin-top: 6.5em;
-    background-image: linear-gradient(to bottom, var(--white), var(--very-light-white));
+    background-image: -webkit-linear-gradient(to bottom, var(--white), var(--light-white));
+    background-image: -moz-linear-gradient(to bottom, var(--white), var(--light-white));
+    background-image: -o-linear-gradient(to bottom, var(--white), var(--light-white));
+    background-image: linear-gradient(to bottom, var(--white), var(--light-white));
 }
 
 @media (min-width:851px){
@@ -252,7 +255,10 @@ button {
 .stories {
     margin-top: 4em;
     padding-bottom: 4em;
-    background: linear-gradient(to bottom, var(--white), var(--light-white));
+    background-image: -webkit-linear-gradient(to bottom, var(--white), var(--light-white));
+    background-image: -moz-linear-gradient(to bottom, var(--white), var(--light-white));
+    background-image: -o-linear-gradient(to bottom, var(--white), var(--light-white));
+    background-image: linear-gradient(to bottom, var(--white), var(--light-white));
 }
 
 .stories h2 {

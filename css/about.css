@@ -282,6 +282,9 @@ button {
 
 .contribute {
     padding: 5em 0;
+    background-image: -webkit-linear-gradient(to bottom, var(--white), var(--light-white));
+    background-image: -moz-linear-gradient(to bottom, var(--white), var(--light-white));
+    background-image: -o-linear-gradient(to bottom, var(--white), var(--light-white));
     background-image: linear-gradient(to bottom, var(--white), var(--light-white));
 }
 
