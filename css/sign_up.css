@@ -136,7 +136,7 @@ input[type=password]{
     background-color:rgba(0,0,0,0.03);
     width:90%;
     max-width:500px;
-    padding:1em 0 1em 4em;
+    padding:1em 0 1em 3.5em;
     border:none;
     margin:auto;
     font-size:var(--sm-size);
@@ -157,7 +157,7 @@ input[type=password]{
     position:absolute;
     top:13px;
     right:0;
-    left:40px;
+    left:30px;
     bottom:0;
     width:25px;
 }
@@ -167,7 +167,7 @@ input[type=password]{
     position:absolute;
     top:15px;
     right:0;
-    left:40px;
+    left:30px;
     bottom:0;
     width:25px;
 }
@@ -176,7 +176,7 @@ input[type=password]{
     position:absolute;
     top:13px;
     right:0;
-    left:40px;
+    left:30px;
     bottom:0;
     width:25px;
 }
@@ -244,16 +244,16 @@ input[type=password]{
     position:absolute;
     top:1em;
     bottom:0;
-    left:9.8em;
+    left:77px;
     right:0;
     width:20px;
 }
 .google-icon::before{
     content:url(../images/sign_up/google-brands.svg);
     position:absolute;
-    top:1.05em;
+    top:1.1em;
     bottom:0;
-    left:10em;
+    left:77px;
     right:0;
     width:18px;
 }
