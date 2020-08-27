@@ -133,6 +133,7 @@ button {
     font-family: var(--open-sans);
     width: 50%;
     max-width: 200px;
+    box-shadow:0 0.05em 0.25em 0 rgba(0,0,0,0.5);
 }
 
 .card__description a,

@@ -107,12 +107,13 @@ h4 {
 }
 
 p {
-    color: var(--very-light-grey);
+    
 }
 
 p {
     font-weight: var(--normal);
     line-height: var(--line-height);
+    color: var(--very-light-grey);
 }
 
 li {
@@ -139,6 +140,8 @@ button {
     color: white;
     cursor: pointer;
     font-family: var(--open-sans);
+    box-shadow:0 0.05em 0.25em 0 rgba(0,0,0,0.3);
+
 }
 
 .intro {
