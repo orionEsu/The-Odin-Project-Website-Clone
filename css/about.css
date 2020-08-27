@@ -213,7 +213,8 @@ button {
     letter-spacing: .5px;
 }
 
-.card+.card {
+.card+.card,
+.cards-1 {
     margin-top: 2em;
 }
 
@@ -229,11 +230,12 @@ button {
 
 
 .card__description p {
-    margin-top: 1.5em;
+    margin-top: 1em;
 }
 
 .open-source-header {
     display: flex;
+    align-items:center;
 }
 
 .open-source-header img {
@@ -245,7 +247,10 @@ button {
     color: var(--very-light-grey);
 }
 
-
+.origin h3,
+.open-source-header h3{
+    font-size:var(--lg-size);
+}
 .contact-us {
     text-align: center;
     margin-top: 5em;
@@ -308,6 +313,10 @@ button {
         width: 80px;
         height: 77px;
     }
+    .origin h3,
+    .open-source-header h3{
+        font-size:1.8rem;
+    }
 }
 
 @media (min-width:768px) {
@@ -343,7 +352,8 @@ button {
         max-width: 750px;
     }
 
-    .card+.card {
+    .card+.card,
+    .cards-1 {
         margin-top: 0;
     }
 
