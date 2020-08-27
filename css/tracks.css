@@ -175,7 +175,7 @@ button {
 }
 
 .card__btn{
-    text-align:right;
+    text-align:-webkit-right;
     margin-top:1em;
 }
 
