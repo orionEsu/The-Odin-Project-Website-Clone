@@ -175,8 +175,7 @@ button {
 }
 
 .card__btn{
-    display:flex;
-    justify-content:right;
+    text-align:right;
     margin-top:1em;
 }
 
