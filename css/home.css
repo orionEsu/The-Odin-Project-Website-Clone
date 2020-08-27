@@ -257,7 +257,7 @@ button {
 
 .stories h2 {
     text-align: center;
-    margin-bottom: 4em;
+    margin-bottom: 2em;
 }
 .user>img,
 .hidden {
@@ -267,6 +267,7 @@ button {
 .user__name a {
     color: var(--light-orange);
     font-weight: var(--normal);
+    font-size:var(--md-size);
 }
 
 .user>p {
