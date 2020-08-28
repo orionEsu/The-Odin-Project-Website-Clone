@@ -143,7 +143,7 @@ input[type=password]{
     background-color:rgba(0,0,0,0.03);
     width:90%;
     max-width:430px;
-    padding:1em 0 1em 4em;
+    padding:1em 0 1em 3.5em;
     border:none;
     margin:auto;
     font-size:var(--sm-size);
@@ -164,7 +164,7 @@ input[type=password]{
     position:absolute;
     top:15px;
     right:0;
-    left:40px;
+    left:30px;
     bottom:0;
     width:25px;
 }
@@ -173,21 +173,23 @@ input[type=password]{
     position:absolute;
     top:13px;
     right:0;
-    left:40px;
+    left:30px;
     bottom:0;
     width:25px;
 }
 
 .remember{
-    display:flex;
-    justify-content: space-between;
+    /* display:flex;
+    justify-content: space-between; */
     margin:1.5em auto 0 auto;
-    width:90%;
+    /* width:90%; */text-align:center;
 }
 
 .remember-me{
     display:flex;
     align-items: center;
+    justify-content:Center;
+    margin-bottom:1em;
 }
 
 .remember-me p{
@@ -209,6 +211,7 @@ input[type=password]{
 .tick{
     content:url(../images/login/check-solid.svg);
     margin-left:2px;
+    margin-top:2px;
     width:15px;
     position:absolute;
     cursor:pointer;
@@ -274,20 +277,20 @@ input[type=password]{
 .github{
     background-color:var(--light-grey);
     margin-bottom:1em;
-    position:relative;
+    /* position:relative; */
 }
 
 .google{
     background-color:var(--dark-blue);
-    position:relative;
+    /* position:relative; */
 }
 
 .github-icon::before{
     content:url(../images/sign_up/github-brands.svg);
-    position:absolute;
+    position:relative;
     top:1em;
     bottom:0;
-    left:9.8em;
+    left:77px;
     right:0;
     width:20px;
 }
@@ -296,7 +299,7 @@ input[type=password]{
     position:absolute;
     top:1.05em;
     bottom:0;
-    left:10em;
+    left:77px;
     right:0;
     width:18px;
 }
@@ -345,5 +348,14 @@ input[type=password]{
     .sign::before,
     .sign::after{
         display:none;
+    }
+}
+
+@media (min-width:700px){
+    .remember{
+        display:flex;
+        justify-content: space-between;
+        margin:1.5em auto 0 auto;
+        width:90%;
     }
 }
