@@ -231,31 +231,10 @@ input[type=password]{
 .github{
     background-color:var(--light-grey);
     margin-bottom:1em;
-    position:relative;
 }
 
 .google{
     background-color:var(--dark-blue);
-    position:relative;
-}
-
-.github-icon::before{
-    content:url(../images/sign_up/github-brands.svg);
-    position:absolute;
-    top:1em;
-    bottom:0;
-    left:77px;
-    right:0;
-    width:20px;
-}
-.google-icon::before{
-    content:url(../images/sign_up/google-brands.svg);
-    position:absolute;
-    top:1.1em;
-    bottom:0;
-    left:77px;
-    right:0;
-    width:18px;
 }
 
 .login-section{

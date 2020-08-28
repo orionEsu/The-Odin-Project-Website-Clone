@@ -198,10 +198,16 @@
         text-align: center;
     }
 
+        .dropdown__menu svg{
+            display:none;
+        }
     .nav__items>.nav__link:focus+ul {
         display: block;
     }
 
+    .nav__items>.nav__link:active+ul {
+        display: block;
+    }
 
     .nav-active {
         opacity: 1;
