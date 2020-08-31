@@ -143,7 +143,7 @@
     .nav__link,
     .dropdown a {
         color: var(--dark-orange);
-        font-size: var(--xl-size);
+        font-size: 1.9rem;
         font-weight: var(--normal);
 
     }
@@ -206,7 +206,7 @@
     }
 
     .nav__items>.nav__link:active+ul {
-        display: block;
+        /* display: block; */
     }
 
     .nav-active {

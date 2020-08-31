@@ -300,18 +300,19 @@ button {
 }
 
 .sign__up {
-    margin-top: 4em;
+    margin-top: 2em;
     text-align: center;
 }
 
 .sign__up>p {
     font-size:var(--xl-size);
     font-weight: var(--light);
+    line-height:1.5;
 }
 
 .sign__up-btn {
     background-color: var(--light-blue);
-    margin-top: 2em;
+    margin-top: 1em;
     width: 45%;
     max-width:250px;
 }
